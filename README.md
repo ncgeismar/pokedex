@@ -22,8 +22,6 @@ I hope you enjoy!
 - Nature: This is more of a nerd feature, I would like to add the natures that are most viable for a specific pokemon.  This feature would be tedious to incorporate, as there are no API’s with this information, but it helps competitive players.
 - Male vs. Female Pokemon: Due to gender being on a scale of 0-8 with 8 being completely female and 0 being completely male, some kind of bar that changes depending on the number would be the best representation of gender.
 
-## `Assumptions on use cases`
-
 ## `Other Technologies`
 
 I would incorporate redux to have a front end database storage.  This would make implementation of new features much cleaner and easier to incorporate.
