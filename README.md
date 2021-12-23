@@ -1,70 +1,44 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**First run** ----> `npm install`
+**Then** ----> `npm run start`
+I hope you enjoy!
 
-## Available Scripts
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
-In the project directory, you can run:
 
-### `npm start`
+# Future Considerations
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## `Additional Features`
+### Features:
+- Pagination: I would like to include pagination for locations.  I would also like to include arrows on the current pagination buttons
+- Evolutions: I would add the level required for a pokemon to evolve, whether the pokemon needs to be traded, or the type of stone/happiness the pokemon needs in order to level. I would also like to include a picture of all evolutions instead of just the buttons.
+- Generations: A nice addition would be including a picture of the pokemon that changes depending on the generation you would like to view the pokemon.  Changing generations would also change moves/stats/evolutions/etc.
+- Variations: Now that the pokemon world has many locations each with different variations of pokemon, I would incorporate the different kinds of the same species of pokemon.  Unfortunately, the API was sending back 404 requests when I tried to access the variation API.
+- Stats: I would like to add base stats to the pokedex so users can compare pokemon/evolution changes.
+- Legendary/Mythical: Adding a mythical/legendary category would be easy, and it’s a nice change for users who are unfamiliar with all the pokemon.
+- Nature: This is more of a nerd feature, I would like to add the natures that are most viable for a specific pokemon.  This feature would be tedious to incorporate, as there are no API’s with this information, but it helps competitive players.
+- Male vs. Female Pokemon: Due to gender being on a scale of 0-8 with 8 being completely female and 0 being completely male, some kind of bar that changes depending on the number would be the best representation of gender.
 
-### `npm test`
+## `Assumptions on use cases`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## `Other Technologies`
 
-### `npm run build`
+I would incorporate redux to have a front end database storage.  This would make implementation of new features much cleaner and easier to incorporate.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## `Performance Concerns`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I feel like run time and memory usage can be optimized better.
+- To start I feel like my fetch request hook is a little chaotic and can be refactored to be more efficient through the use of redux.
+- Because I created my own functions in the components themselves, some of which include iteration, the performance and app runtime are not optimal.  This results in excess variables that may slow down the app, as well as a slower runtime because the functions need to run before displaying information.
+- I use multiple states, which does not appear as clean as Redux.  Redux would be the quick fix for making the code look cleaner.
+- I coded history as an object in order to prevent duplicates.  Looking back I think an array was the correct approach, however removing duplicates was taking a bit of time, so I decided to use the object approach.  Time seems to be the limiting factor for a lot of these features.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## `Visual Enhancements`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Editing the background photo I used (of a pokedex) to not have a white background would make the website easier to work with.  Due to using an already created photo, I had to make the app over this background photo within a certain area.  I think a better approach would be to add nice photos occasionally instead of setting the entire background as one image.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The webpage has a 2002 feel, it needs some touching up to make it appear more modern.

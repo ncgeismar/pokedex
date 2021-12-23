@@ -5,9 +5,137 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://wallpaperaccess.com/full/5818321.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.pokemon-loader {
+  height:200px;
+  width:300px;
+}
+
+.main {
+  margin-top:30% !important;
+  margin:auto;
+  padding-bottom:200px;
+  width: 100%;
+  height:100%;
+  text-align: center;
+}
+
+.pokemon-description{
+  align-items:top;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: baseline;
+  /* flex-wrap: wrap; */
+}
+
+.evolutions {
+  justify-content: space-evenly;
+  display: flex;
+  flex:column;
+}
+
+.pokemon-card{
+  padding-top: 2%;
+}
+
+.gender-icon{
+  width:50px;
+  height:50px;
+}
+
+.gender-flex{
+  display:flex;
+  /* flex:row; */
+}
+
+.block-color{
+  width:40px;
+  height:40px;
+  margin: auto;
+  border-radius: 30%;
+}
+
+.pokemon-attribute{
+  width: 100px;
+  /* display: flex;
+  flex-wrap:wrap; */
+}
+
+.padding{
+  margin-left:9%;
+  margin-right:9%;
+}
+
+.type{
+  display:flex;
+  flex:column;
+  justify-content:center;
+}
+
+.type-pics{
+  width: 40px;
+  height: 40px;
+  padding-bottom: 15px;
+}
+
+.evo-button{
+  font-family: 'Pokemon Solid';
+  /* border-radius: 50%;
+  background-color: red;
+  width:100px;
+  height: 30px; */
+}
+
+.pokemon-font {
+  font-family: 'Pokemon Solid';
+}
+
+.history {
+  width: 400px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin:auto;
+  /* margin-inline-start:9%;
+  margin-inline-end:9%; */
+}
+
+.one-poke-history-image{
+  height:40px;
+  width:40px;
+}
+.one-poke-history{
+  /* height: 3%;
+  width: 3%; */
+  height:30px;
+  width:30px;
+  margin:5px;
+  display:flex;
+  flex:row;
+}
+
+.button-moves{
+  width:111.14px;
+  height: 17px;
+  border-radius: 10%;
+}
+
+.moves-flex {
+  justify-content:center;
+  display:flex;
+  flex-direction:column;
+}
+
+.p-moves{
+  margin-top:5px;
+  margin-bottom:5px;
 }
